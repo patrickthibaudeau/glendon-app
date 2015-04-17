@@ -6,4 +6,5 @@ function init_glendon_app() {
     
     //load header
     $('.app-header').load('header.html');
+    $('.app-footer').load('footer.html');
 }
