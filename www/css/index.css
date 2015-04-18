@@ -168,12 +168,18 @@ hr{
 
 a {
     text-transform: none;
-    font-size: 1.3em;
+    font-size: 1.1em;
     text-decoration: none;
     font-weight: normal !important;
 }
 
+
 #blue-bar{
-    height: 50px;
+    padding: 5px;
     background-color: #0068A4;
+}
+
+#eclassiframe{
+    width: 100% !important;
+    min-height: 600px !important;
 }

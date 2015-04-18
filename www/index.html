@@ -33,6 +33,7 @@
         <title>Glendon</title>
     </head>
     <body>
+        <input type="hidden" id="lang" value="fr">
         <div data-role="page" id="home">
             <div class="app-header"></div>
             <div role="main" class="ui-content">
@@ -40,25 +41,25 @@
                     <div class="ui-grid-c">
                         <div class="ui-block-a">
                             <div class="ui-bar" style="height:60px">
-                                <a id="eclassurl"  href="http://eclass.glendon.yorku.ca"><i class="fa fa-graduation-cap icons"></i><br>eClass</a>
+                                <a id="eclassurl"  href="#" ><i class="fa fa-graduation-cap icons"></i><br><span class="link_text">eClass</span></a>
                             </div>
 
                         </div>
                         <div class="ui-block-b">
                             <div class="ui-bar" style="height:60px">
-                                <a id="libraryurl"  href="#library"><i class="fa fa-book icons"></i><br>Library</a>
+                                <a id="libraryurl"  href="#library"><i class="fa fa-book icons"></i><br><span class="library link_text"></span></a>
                             </div>
 
                         </div>
                         <div class="ui-block-c">
                             <div class="ui-bar" style="height:60px">
-                                <a id="findapersonurl"  href="#findaperson"><i class="fa fa-users icons"></i><br>Find a person</a>
+                                <a id="findapersonurl"  href="#findaperson"><i class="fa fa-users icons"></i><br><span class="findperson"></span></a>
                             </div>
 
                         </div>
                         <div class="ui-block-d">
                             <div class="ui-bar" style="height:60px">
-                                <a id="studentservicesurl"  href="#studentservices"><i class="fa fa-user icons"></i><br>Student services</a>
+                                <a id="studentservicesurl"  href="#studentservices"><i class="fa fa-user icons"></i><br><span class="studentservices"></span></a>
                             </div>
 
                         </div>
@@ -71,7 +72,7 @@
         <div data-role="page" id="library">
             <div class="app-header"></div>
             <div role="main" class="ui-content">
-                <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+                <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-left"><span class="home"></span></a>
             </div>
             <div class="app-footer"></div>
         </div><!--Library-->
@@ -79,33 +80,33 @@
         <div data-role="page" id="findaperson">
             <div class="app-header"></div>
             <div role="main" class="ui-content">
-                <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+                <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-left"><span class="home"></span></a>
                 <form
                     id="SearchForm"
                     name="SearchForm"
                     method="post"
                     action="http://mocha.yorku.ca/atlas/servlet/atlas/action/AtlasAction/template/atlasResults.vm">
                     <div class="ui-field-contain">
-                        <label for="SearchSurname">Surname</label>
-                        <input name="SearchSurname" id="SearchSurname" placeholder="Surname" value="" type="text">
+                        <label for="SearchSurname"><span class="surname"></span></label>
+                        <input name="SearchSurname" id="SearchSurname"  value="" type="text">
                     </div>
                     <div class="ui-field-contain">
-                        <label for="SearchAka">First name</label>
-                        <input name="SearchAka" id="SearchAka" placeholder="First name" value="" type="text">
+                        <label for="SearchAka"><span class="firstname"></span></label>
+                        <input name="SearchAka" id="SearchAka" value="" type="text">
                     </div>
                     <div class="ui-field-contain">
-                        <label for="SearchEmail">E-mail address</label>
-                        <input name="SearchEmail" id="SearchEmail" placeholder="E-mail address" value="" type="text">
+                        <label for="SearchEmail"><span class="email"></span></label>
+                        <input name="SearchEmail" id="SearchEmail" value="" type="text">
                     </div>
                     <div class="ui-field-contain">
-                        <label for="SearchTelephone">Telephone Extension</label>
-                        <input name="SearchTelephone" id="SearchTelephone" placeholder="Telephone extension" value="" type="text">
+                        <label for="SearchTelephone"><span class="telephone"></span></label>
+                        <input name="SearchTelephone" id="SearchTelephone"  value="" type="text">
                     </div>
                     <div class="ui-field-contain">
-                        <label for="SearchOrgUnit">Department</label>
-                        <input name="SearchOrgUnit" id="SearchOrgUnit" placeholder="Department" value="" type="text">
+                        <label for="SearchOrgUnit"><span class="department"></span></label>
+                        <input name="SearchOrgUnit" id="SearchOrgUnit"  value="" type="text">
                     </div>
-                    <button type="submit" class="ui-btn">Search</button>
+                    <button type="submit" class="ui-btn"><span class="search"></span></button>
                 </form>
                 <br>&nbsp;
                 <br>&nbsp;
@@ -125,10 +126,12 @@
         <div data-role="page" id="studentservices">
             <div class="app-header"></div>
             <div role="main" class="ui-content">
-                <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+                <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-left"><span class="home"></span></a>
             </div>
             <div class="app-footer"></div>
-        </div><!--Library-->
+        </div><!--student services-->
+        
+        
 
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+    <translation id="library">
+        <en>Library</en>
+        <fr>Bibliothèque</fr>
+    </translation>
+    <translation id="findperson">
+        <en>Find a person</en>
+        <fr>Trouver une personne</fr>
+    </translation>
+    <translation id="studentservices">
+        <en>Student services</en>
+        <fr>Services aux étudiants</fr>
+    </translation>
+    <translation id="home">
+        <en>Home</en>
+        <fr>Accueil</fr>
+    </translation>
+    <translation id="surname">
+        <en>Last name</en>
+        <fr>Nom</fr>
+    </translation>
+    <translation id="firstname">
+        <en>first name</en>
+        <fr>Prénom</fr>
+    </translation>
+    <translation id="email">
+        <en>Email</en>
+        <fr>Courriel</fr>
+    </translation>
+    <translation id="telephone">
+        <en>Telephone/Extension</en>
+        <fr>Téléphone/Extension</fr>
+    </translation>
+    <translation id="department">
+        <en>Department</en>
+        <fr>Département</fr>
+    </translation>
+    <translation id="search">
+        <en>Search</en>
+        <fr>Rechercher</fr>
+    </translation>
+    <translation id="french">
+        <en>Français</en>
+        <fr>Français</fr>
+    </translation>
+    <translation id="english">
+        <en>English</en>
+        <fr>English</fr>
+    </translation>
+</translations>
