@@ -26,117 +26,56 @@
         <meta name="msapplication-tap-highlight" content="no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
         <link rel="stylesheet" href="css/font-awesome-4.3.0/css/font-awesome.min.css" />
         <link rel='stylesheet' id='berling-css'  href='fonts/MyFontsWebfontsKit/MyFontsWebfontsKit.css?ver=4.1.1' type='text/css' media='all' />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Glendon</title>
     </head>
     <body>
-        <input type="hidden" id="lang" value="fr">
-        <div data-role="page" id="home">
-            <div class="app-header"></div>
-            <div role="main" class="ui-content">
-                <div id="deviceready">
-                    <div class="ui-grid-c">
-                        <div class="ui-block-a">
-                            <div class="ui-bar" style="height:60px">
-                                <a id="eclassurl"  href="#" ><i class="fa fa-graduation-cap icons"></i><br><span class="link_text">eClass</span></a>
-                            </div>
-
-                        </div>
-                        <div class="ui-block-b">
-                            <div class="ui-bar" style="height:60px">
-                                <a id="libraryurl"  href="#library"><i class="fa fa-book icons"></i><br><span class="library link_text"></span></a>
-                            </div>
-
-                        </div>
-                        <div class="ui-block-c">
-                            <div class="ui-bar" style="height:60px">
-                                <a id="findapersonurl"  href="#findaperson"><i class="fa fa-users icons"></i><br><span class="findperson"></span></a>
-                            </div>
-
-                        </div>
-                        <div class="ui-block-d">
-                            <div class="ui-bar" style="height:60px">
-                                <a id="studentservicesurl"  href="#studentservices"><i class="fa fa-user icons"></i><br><span class="studentservices"></span></a>
-                            </div>
-
-                        </div>
-                    </div><!-- /grid-c -->
+        <div id="deviceready">
+            <div class="navbar navbar-fixed-top">
+                <div id="logo">
+                    <img src="img/glendon-logo.jpg" class="img-responsive" >
                 </div>
             </div>
-            <div class="app-footer"></div>
+            <div id="blue-bar">	
+                    <button class="btn btn_fr"><span class="french"></span></button>
+                    <button class="btn btn_en"><span class="english"></span></button>
+                </div>
+
+            <div class="container container-body">
+                <div class="row">
+                    <div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+
+                        <a id="eclassurl"  href="#" ><i class="fa fa-graduation-cap icons"></i><br><span class="link_text">eClass</span></a>
+
+                    </div>
+                    <div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+
+                        <a id="libraryurl"  href="#library"><i class="fa fa-book icons"></i><br><span class="library link_text"></span></a>
+
+                    </div>
+                    <div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+
+                        <a id="findapersonurl"  href="findperson.html" data-prefetch="false"><i class="fa fa-users icons"></i><br><span class="findperson"></span></a>
+
+                    </div>
+                    <div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+
+                        <a id="studentservicesurl"  href="#studentservices"><i class="fa fa-user icons"></i><br><span class="studentservices"></span></a>
+
+                    </div>
+                </div>
+            </div>
+
         </div> <!--Page one-->
-
-        <div data-role="page" id="library">
-            <div class="app-header"></div>
-            <div role="main" class="ui-content">
-                <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-left"><span class="home"></span></a>
-            </div>
-            <div class="app-footer"></div>
-        </div><!--Library-->
-
-        <div data-role="page" id="findaperson">
-            <div class="app-header"></div>
-            <div role="main" class="ui-content">
-                <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-left"><span class="home"></span></a>
-                <form
-                    id="SearchForm"
-                    name="SearchForm"
-                    method="post"
-                    action="http://mocha.yorku.ca/atlas/servlet/atlas/action/AtlasAction/template/atlasResults.vm">
-                    <div class="ui-field-contain">
-                        <label for="SearchSurname"><span class="surname"></span></label>
-                        <input name="SearchSurname" id="SearchSurname"  value="" type="text">
-                    </div>
-                    <div class="ui-field-contain">
-                        <label for="SearchAka"><span class="firstname"></span></label>
-                        <input name="SearchAka" id="SearchAka" value="" type="text">
-                    </div>
-                    <div class="ui-field-contain">
-                        <label for="SearchEmail"><span class="email"></span></label>
-                        <input name="SearchEmail" id="SearchEmail" value="" type="text">
-                    </div>
-                    <div class="ui-field-contain">
-                        <label for="SearchTelephone"><span class="telephone"></span></label>
-                        <input name="SearchTelephone" id="SearchTelephone"  value="" type="text">
-                    </div>
-                    <div class="ui-field-contain">
-                        <label for="SearchOrgUnit"><span class="department"></span></label>
-                        <input name="SearchOrgUnit" id="SearchOrgUnit"  value="" type="text">
-                    </div>
-                    <button type="submit" class="ui-btn"><span class="search"></span></button>
-                </form>
-                <br>&nbsp;
-                <br>&nbsp;
-                <br>&nbsp;
-                <br>&nbsp;
-                <br>&nbsp;
-                <br>&nbsp;
-                <br>&nbsp;
-                <br>&nbsp;
-                <br>&nbsp;
-                <br>&nbsp;
-                <br>&nbsp;
-            </div>
-            <div class="app-footer"></div>
-        </div><!--Library-->
-
-        <div data-role="page" id="studentservices">
-            <div class="app-header"></div>
-            <div role="main" class="ui-content">
-                <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-left"><span class="home"></span></a>
-            </div>
-            <div class="app-footer"></div>
-        </div><!--student services-->
-        
-        
-
+        <!--JS Files-->
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery-cookie.js"></script>
         <script type="text/javascript" src="js/glendon-app.js"></script>
         <script type="text/javascript">
             app.initialize();

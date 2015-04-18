@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<body>
+
+    <div data-role="page">
+        <div data-role="header" data-position="fixed">
+            <div class="ui-grid-a">
+                <!--<div class="ui-block-a">-->
+                <div id="logo">
+                    <img src="img/glendon-logo.jpg" class="img-responsive" >
+                </div>
+            </div>
+            <div id="blue-bar">	
+                <button class="ui-btn ui-btn-inline fr_btn"><span class="french"></span></button>
+                <button class="ui-btn ui-btn-inline en_btn"><span class="english"></span></button>
+            </div>
+        </div>
+        <div role="main" class="ui-content">
+            <a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-left"><span class="home"></span></a>
+            <form
+                id="SearchForm"
+                name="SearchForm"
+                method="post"
+                action="http://mocha.yorku.ca/atlas/servlet/atlas/action/AtlasAction/template/atlasResults.vm">
+                <div class="ui-field-contain">
+                    <label for="SearchSurname"><span class="surname"></span></label>
+                    <input name="SearchSurname" id="SearchSurname"  value="" type="text">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="SearchAka"><span class="firstname"></span></label>
+                    <input name="SearchAka" id="SearchAka" value="" type="text">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="SearchEmail"><span class="email"></span></label>
+                    <input name="SearchEmail" id="SearchEmail" value="" type="text">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="SearchTelephone"><span class="telephone"></span></label>
+                    <input name="SearchTelephone" id="SearchTelephone"  value="" type="text">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="SearchOrgUnit"><span class="department"></span></label>
+                    <input name="SearchOrgUnit" id="SearchOrgUnit"  value="" type="text">
+                </div>
+                <button type="submit" class="ui-btn"><span class="search"></span></button>
+            </form>
+            <br>&nbsp;
+            <br>&nbsp;
+            <br>&nbsp;
+            <br>&nbsp;
+            <br>&nbsp;
+            <br>&nbsp;
+            <br>&nbsp;
+            <br>&nbsp;
+            <br>&nbsp;
+            <br>&nbsp;
+            <br>&nbsp;
+        </div>
+        <div class="app-footer"></div>
+        
+        
+
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css" />
+        <link rel="stylesheet" href="css/font-awesome-4.3.0/css/font-awesome.min.css" />
+        <link rel='stylesheet' id='berling-css'  href='fonts/MyFontsWebfontsKit/MyFontsWebfontsKit.css?ver=4.1.1' type='text/css' media='all' />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="js/jquery-cookie.js"></script>
+        <script type="text/javascript" src="js/glendon-app.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                init_glendon_app();
+            });
+        </script>
+    </div><!--Library-->
+
+</body>
+
