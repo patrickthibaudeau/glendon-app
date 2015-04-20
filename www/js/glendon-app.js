@@ -1,7 +1,5 @@
 function init_glendon_app() {
     
-//    $('a').removeClass();
-
     $('#eclassurl').click(function () {
         var ref = window.open('http://eclass.glendon.yorku.ca', '_system', 'location=yes');
     });
@@ -20,19 +18,6 @@ function init_glendon_app() {
 //        $('#lang').val('en');
         $.cookie('lang', 'en');
         lang_toggle('en');
-    });
-    $('.btn_fr').click(function () {
-//        $('#lang').val('fr');
-        $.cookie('lang', 'fr');
-        lang_toggle('fr');
-    });
-}
-
-function init_glendon_header() {
-    $('.btn_en').click(function () {
-//        $('#lang').val('en');
-        $.cookie('lang', 'en');
-        lang_toggle('en');
         $('.btn_en').addClass('btn-success');
         $('.btn_fr').removeClass('btn-success');
     });
@@ -44,6 +29,23 @@ function init_glendon_header() {
         $('.btn_en').removeClass('btn-success');
     });
 }
+//
+//function init_glendon_header() {
+//    $('.btn_en').click(function () {
+////        $('#lang').val('en');
+//        $.cookie('lang', 'en');
+//        lang_toggle('en');
+//        $('.btn_en').addClass('btn-success');
+//        $('.btn_fr').removeClass('btn-success');
+//    });
+//    $('.btn_fr').click(function () {
+////        $('#lang').val('fr');
+//        $.cookie('lang', 'fr');
+//        lang_toggle('fr');
+//        $('.btn_fr').addClass('btn-success');
+//        $('.btn_en').removeClass('btn-success');
+//    });
+//}
 
 function lang_toggle(language) {
     $.ajax({
