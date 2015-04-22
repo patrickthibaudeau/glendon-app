@@ -24,18 +24,18 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-/*    background-color:#E4E4E4;
-    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0, #A7A7A7),
-        color-stop(0.51, #E4E4E4)
-        );
-    background-attachment:fixed;*/
+    /*    background-color:#E4E4E4;
+        background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+        background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+        background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+        background-image:-webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            color-stop(0, #A7A7A7),
+            color-stop(0.51, #E4E4E4)
+            );
+        background-attachment:fixed;*/
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
     height:100%;
@@ -187,9 +187,163 @@ a {
 
 .container-body{
     position: relative;
-    top: 180px;
+    top: 200px;
 }
 
 .row-top {
     margin-top: 30px;
+}
+
+.icons {
+    font-size: 1.5em;
+}
+
+.center-text {
+    text-align: center;
+}
+
+/*From glendon theme*/
+#quicklinks {
+    background: none repeat scroll 0 0 #f4f4f4;
+    box-shadow: 0 0 2px #666;
+    display: none;
+    /*left: -2px;*/
+    margin-top: 30px;
+    padding: 20px;
+    position: absolute;
+    text-align: left;
+    max-width: 1133px;
+    z-index: 999;
+
+}
+
+#quicklinks ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+//Default log size
+#logo img {
+    width:auto; 
+    height:auto;
+    max-height: 94px;
+}
+
+
+
+.left {
+    float: left;
+}
+
+#secondary-menu {
+    text-transform: uppercase;
+    margin-top: 45px;
+}
+
+#language-toggle,
+#global-search,
+#quick-links
+{
+    margin-right: 5px;
+}
+
+#s{
+    min-width: 200px !important;
+}
+
+.left {
+    float: left;
+}
+
+#alumni,
+#current-students,
+#future-students {
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-family: "Source Sans Pro";
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#alumni a,
+#current-students a,
+#future-students a {
+    color: #000;
+}
+
+#q, #s {
+    height: 28px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+/*Glendon Button*/
+.btn-glendon-blue {
+    top: 0px;
+    color: #fff;
+    background-color: #0068A4;
+    border-color: #0068A4;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.btn-glendon-blue:hover,
+.btn-glendon-blue:focus,
+.btn-glendon-blue.focus,
+.btn-glendon-blue:active,
+.btn-glendon-blue.active,
+.open > .dropdown-toggle.btn-glendon-blue {
+    color: #fff !important;
+    background-color: #286090;
+    border-color: #204d74;
+}
+.btn-glendon-blue:active,
+.btn-glendon-blue.active,
+.open > .dropdown-toggle.btn-glendon-blue {
+    background-image: none;
+}
+.btn-glendon-blue.disabled,
+.btn-glendon-blue[disabled],
+fieldset[disabled] .btn-glendon-blue,
+.btn-glendon-blue.disabled:hover,
+.btn-glendon-blue[disabled]:hover,
+fieldset[disabled] .btn-glendon-blue:hover,
+.btn-glendon-blue.disabled:focus,
+.btn-glendon-blue[disabled]:focus,
+fieldset[disabled] .btn-glendon-blue:focus,
+.btn-glendon-blue.disabled.focus,
+.btn-glendon-blue[disabled].focus,
+fieldset[disabled] .btn-glendon-blue.focus,
+.btn-glendon-blue.disabled:active,
+.btn-glendon-blue[disabled]:active,
+fieldset[disabled] .btn-glendon-blue:active,
+.btn-glendon-blue.disabled.active,
+.btn-glendon-blue[disabled].active,
+fieldset[disabled] .btn-glendon-blue.active {
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+.btn-glendon-blue .badge {
+    color: #337ab7;
+    background-color: #fff;
+}
+
+/*Padding readjusted to align memnu with logo*/
+.navbar-collapse {
+    padding-left: 10px;
+}
+
+#navbar-right-menu {
+    margin-top: -1px;
+}
+#glendon-logo img {
+    width:auto; 
+    height:auto;
+    max-height: 65px;
+}
+
+.btn, .navbar, .dropdown-menu {
+    border-radius: 0;
 }

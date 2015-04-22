@@ -9,7 +9,7 @@
     </author>
     <content src="index.html" />
     <preference name="permissions" value="none" />
-    <!--<preference name="orientation" value="portrait" />-->
+    <preference name="orientation" value="portrait" />
     <preference name="target-device" value="universal" />
     <preference name="fullscreen" value="true" />
     <preference name="webviewbounce" value="true" />
@@ -66,8 +66,9 @@
     <gap:splash gap:platform="ios" height="1024" src="www/res/screen/ios/screen-ipad-portrait.png" width="768" />
     <gap:splash gap:platform="ios" height="768" src="www/res/screen/ios/screen-ipad-landscape.png" width="1024" />
     <gap:splash gap:platform="winphone" src="www/res/screen/windows-phone/screen-portrait.jpg" />
-    <access origin="http://*.glendon.yorku.ca" />
-    <access origin="https://*.glendon.yorku.ca" />
+    <access origin="http://eclass.glendon.yorku.ca" />
+    <access origin="https://www.glendon.yorku.ca/alumni/events/" />
+    <access origin="http://www.glendon.yorku.ca/eclass/index.php" />
     <plugin name="cordova-plugin-whitelist" version="1" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />

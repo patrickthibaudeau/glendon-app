@@ -48,4 +48,24 @@
         <en>English</en>
         <fr>English</fr>
     </translation>
+    <translation id="yucard">
+        <en>YuCard</en>
+        <fr>YuCard</fr>
+    </translation>
+    <translation id="news">
+        <en>News</en>
+        <fr>Nouvelles</fr>
+    </translation>
+    <translation id="athletics">
+        <en>Athletics</en>
+        <fr>Sports</fr>
+    </translation>
+    <translation id="events">
+        <en>Events</en>
+        <fr>Évennements</fr>
+    </translation>
+    <translation id="quicklinks">
+        <en>Quick links</en>
+        <fr>Liens rapide</fr>
+    </translation>
 </translations>

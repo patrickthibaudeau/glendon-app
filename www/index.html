@@ -27,13 +27,148 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-        <link rel="stylesheet" href="css/font-awesome-4.3.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/font-awesome-4.3.0/css/font-awesome.min.css" /> 
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Glendon</title>
     </head>
     <body>
         <div id="deviceready">
-            <nav class="navbar navbar-fixed-top">
+            <!--Header-->
+            <div  class="container">
+            <!--Quick links-->
+            <div id="quicklinks" class="container container-fluid">
+                <div class="col-sm-3">
+                    <h3><?php echo _e('About us', 'glendon'); ?></h3>
+                    <ul>
+                        <li>
+                            <a href="<?php echo _e('About us url', 'glendon'); ?>"><?php echo _e('About us', 'glendon'); ?></a>
+                        </li>
+                        <li>
+                            <a href="<?php echo _e('Principals message url', 'glendon'); ?>"><?php echo _e('Principals Message', 'glendon'); ?></a>
+                        </li>
+                        <li>
+                            <a href="<?php echo _e('Research url', 'glendon'); ?>"><?php echo _e('Research', 'glendon'); ?></a>
+                        </li>
+                        <li>
+                            <a href="<?php echo _e('Our professors url', 'glendon'); ?>"><?php echo _e('Our Professors', 'glendon'); ?></a>
+                        </li>
+                        <li>
+                            <a href="<?php echo _e('Centre of Excellence url', 'glendon'); ?>"><?php echo _e('Centre of Excellence', 'glendon'); ?></a>
+                        </li>
+                        <li>
+                            <a href="<?php echo _e('Careers url', 'glendon'); ?>"><?php echo _e('Careers', 'glendon'); ?></a>
+                        </li>
+                        <li>
+                            <a href="<?php echo _e('Directory url', 'glendon'); ?>"><?php echo _e('Directory', 'glendon'); ?></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h3><?php echo _e('Students', 'glendon'); ?></h3>
+                    <ul>
+                        <li>
+                            <a href="<?php echo _e('Programs of Study url', 'glendon'); ?>"><?php echo _e('Programs of Study', 'glendon'); ?></a>
+                        </li>
+                        <li>
+                            <a href="<?php echo _e('Undergraduate Admissions url', 'glendon'); ?>"><?php echo _e('Undergraduate Admissions', 'glendon'); ?></a>
+                        </li>
+                        <li>
+                            <a href="<?php echo _e('Graduate Admissions url', 'glendon'); ?>"><?php echo _e('Graduate Admissions', 'glendon'); ?></a>
+                        </li>
+                        <li>
+                            <a href="<?php echo _e('Extended Learning url', 'glendon'); ?>"><?php echo _e('Extended Learning', 'glendon'); ?></a>
+                        </li>
+                        <li>
+                            <a href="<?php echo _e('Visit Us url', 'glendon'); ?>"><?php echo _e('Visit Us', 'glendon'); ?></a>
+                        </li>
+                        <li>
+                            <a href="<?php echo _e('Libraries url', 'glendon'); ?>"><?php echo _e('Libraries', 'glendon'); ?></a>
+                        </li>
+                        <li>
+                            <a href="<?php echo _e('Campus Life url', 'glendon'); ?>"><?php echo _e('Campus Life', 'glendon'); ?></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h3><?php echo _e('Faculty and staff', 'glendon'); ?></h3>
+                    <ul>
+                        <li>
+                            <a href="<?php echo _e('Home url', 'glendon'); ?>"><?php echo _e('Home', 'glendon'); ?></a>
+                        </li>
+                        <li>
+                            <a href="<?php echo _e('Yu Link url', 'glendon'); ?>"><?php echo _e('Yu Link', 'glendon'); ?></a>
+                        </li>
+                        <li>
+                            <a href="<?php echo _e('Webmail url', 'glendon'); ?>"><?php echo _e('Webmail', 'glendon'); ?></a>
+                        </li>
+                        <li>
+                            <a href="<?php echo _e('Maps & Directions url', 'glendon'); ?>"><?php echo _e('Maps & Directions', 'glendon'); ?></a>
+                        </li>
+                        <li>
+                            <a href="<?php echo _e('Directory url', 'glendon'); ?>"><?php echo _e('Directory', 'glendon'); ?></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h3><?php echo _e('Visitors', 'glendon'); ?></h3>
+                    <ul>
+                        <li>
+                            <a href="<?php echo _e('Counsellors & Teachers url', 'glendon'); ?>"><?php echo _e('Counsellors & Teachers', 'glendon'); ?></a>
+                        </li>
+                        <li>
+                            <a href="<?php echo _e('Media url', 'glendon'); ?>"><?php echo _e('Media', 'glendon'); ?></a>
+                        </li>
+                        <li>
+                            <a href="<?php echo _e('Giving to Glendon url', 'glendon'); ?>"><?php echo _e('Giving to Glendon', 'glendon'); ?></a>
+                        </li>
+                        <li>
+                            <a href="<?php echo _e('Accessibility url', 'glendon'); ?>"><?php echo _e('Accessibility', 'glendon'); ?></a>
+                        </li>
+                        <li>
+                            <a href="<?php echo _e('Weather Status url', 'glendon'); ?>"><?php echo _e('Weather Status', 'glendon'); ?></a>
+                        </li>
+                        <li>
+                            <a href="<?php echo _e('Maps & Directions url', 'glendon'); ?>"><?php echo _e('Maps & Directions', 'glendon'); ?></a>
+                        </li>
+                        <li>
+                            <a href="<?php echo _e('Parking & Transportation url', 'glendon'); ?>"><?php echo _e('Parking & Transportation', 'glendon'); ?></a>
+                        </li>
+                        <li>
+                            <a href="<?php echo _e('Facilities Rentals url', 'glendon'); ?>"><?php echo _e('Facilities Rentals', 'glendon'); ?></a>
+                        </li>
+                        <li>
+                            <a href="<?php echo _e('Athletics Club url', 'glendon'); ?>"><?php echo _e('Athletics Club', 'glendon'); ?></a>
+                        </li>
+                        <li>
+                            <a href="<?php echo _e('Art Gallery url', 'glendon'); ?>"><?php echo _e('Art Gallery', 'glendon'); ?></a>
+                        </li>
+                        <li>
+                            <a href="<?php echo _e('Theatre Glendon url', 'glendon'); ?>"><?php echo _e('Theatre Glendon', 'glendon'); ?></a>
+                        </li>
+                        <li>
+                            <a href="<?php echo _e('Careers url', 'glendon'); ?>"><?php echo _e('Careers', 'glendon'); ?></a>
+                        </li>
+                        <li>
+                            <a href="<?php echo _e('Directory url', 'glendon'); ?>"><?php echo _e('Directory', 'glendon'); ?></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--End Quick links-->
+            <!--Logo-->
+            <div id="glendon-logo">
+                <a href="http://www.glendon.yorku.ca"><img src="img/glendon.svg" class="img-responsive left" alt="Logo - Glendon"></a><a href="http://yorku.ca"><img src="img/yorku.svg" class="img-responsive left" alt="Logo - YorkU"></a>
+            </div>
+            <!--Glendon text-->
+            
+            <!--Language and search bar-->
+            <div id="navbar-right-menu" class="pull-right">
+                <div id="quick-links" class="pull-right"><a id="btn_quicklinks" href="#" class="btn btn-glendon-blue"><span class="quicklinks"></span>&nbsp;&nbsp;<i id="quicklinks_caret" class="fa fa-sort-asc"></i></a></div>
+                <div id="language-toggle" class="pull-right"><a id="language" href="#" class="btn btn-glendon-blue"><span class="french"></span></a></div>
+            </div>
+        </div>
+            <!--End header-->
+<!--            <nav class="navbar navbar-fixed-top">
                 <div id="logo">
                     <img src="img/glendon-logo.jpg" class="img-responsive" >
                 </div>
@@ -41,51 +176,56 @@
                     <button class="btn btn_fr"><span class="french"></span></button>
                     <button class="btn btn_en"><span class="english"></span></button>
                 </div>
-            </nav>
+            </nav>-->
             <div class="container container-body">
                 <div class="row">
                     <div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
-
-                        <a id="eclassurl"  href="#" ><i class="fa fa-graduation-cap icons"></i><br><span class="link_text">eClass</span></a>
-
-                    </div>
-                    <div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
-
-                        <a id="libraryurl"  href="#library"><i class="fa fa-book icons"></i><br><span class="library link_text"></span></a>
+                        <div class="center-text">
+                            <a id="eclassurl"  href="#" ><i class="fa fa-graduation-cap icons"></i><br><span class="link_text">eClass</span></a>
+                        </div>
 
                     </div>
                     <div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
-
-                        <a id="findapersonurl"  href="findperson.html" data-prefetch="false"><i class="fa fa-users icons"></i><br><span class="findperson"></span></a>
+                        <div class="center-text">
+                            <a id="libraryurl"  href="#library"><i class="fa fa-book icons"></i><br><span class="library link_text"></span></a>
+                        </div>
 
                     </div>
                     <div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+                        <div class="center-text">
+                            <a id="findapersonurl"  href="#" data-prefetch="false"><i class="fa fa-users icons"></i><br><span class="findperson"></span></a>
+                        </div>
 
-                        <a id="studentservicesurl"  href="#studentservices"><i class="fa fa-user icons"></i><br><span class="studentservices"></span></a>
+                    </div>
+                    <div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
+                        <div class="center-text">
+                            <a id="studentservicesurl"  href="#studentservices"><i class="fa fa-user icons"></i><br><span class="studentservices"></span></a>
+                        </div>
 
                     </div>
                 </div>
                 <div class="row row-top">
                     <div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
-
-                        <a id="eclassurl"  href="#" ><i class="fa fa-graduation-cap icons"></i><br><span class="link_text">eClass</span></a>
-
+                        <div class="center-text">
+                            <a id="yucardurl"  href="#" ><i class="fa fa-credit-card icons"></i><br><span class="yucard"></span></a>
+                        </div>
                     </div>
                     <div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
-
-                        <a id="libraryurl"  href="#library"><i class="fa fa-book icons"></i><br><span class="library link_text"></span></a>
-
+                        <div class="center-text">
+                            <a id="newsurl"  href="#news"><i class="fa fa-newspaper-o icons"></i><br><span class="news"></span></a>
+                        </div>
                     </div>
                     <div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
-
-                        <a id="findapersonurl"  href="findperson.html" data-prefetch="false"><i class="fa fa-users icons"></i><br><span class="findperson"></span></a>
-
+                        <div class="center-text">
+                            <a id="eventsurl"  href="#"><i class="fa fa-calendar-o icons"></i><br><span class="events"></span></a>
+                        </div>
                     </div>
                     <div class="col-xs-3 col-md-3 col-sm-3 col-lg-3">
-
-                        <a id="studentservicesurl"  href="#studentservices"><i class="fa fa-user icons"></i><br><span class="studentservices"></span></a>
-
+                        <div class="center-text">
+                            <a id="athleticsurl"  href="#" ><i class="fa fa-futbol-o icons"></i><br><span class="athletics"></span></a>
+                        </div>
                     </div>
+                    
                 </div>
             </div>
 
