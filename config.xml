@@ -7,7 +7,7 @@
     <author email="thibaud@glendon.yorku.ca" href="http://www.glendon.yorku.ca">
         Glendon ITS Team
     </author>
-    <content src="index.html" />
+    <content src="www/index.html" />
     <preference name="permissions" value="none" />
     <preference name="orientation" value="portrait" />
     <preference name="target-device" value="universal" />
