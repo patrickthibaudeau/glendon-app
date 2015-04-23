@@ -1,4 +1,7 @@
 function init_glendon_app() {
+    //Hide both language buttons
+    $('.btn_fr').hide();
+    $('.btn_en').hide();
 
     if ($.cookie('lang')) {
         var lang = $.cookie('lang');
@@ -7,22 +10,27 @@ function init_glendon_app() {
         $.cookie('lang', 'fr');
 
     }
-    $('.btn_' + lang).addClass('btn-success');
+    //Show appropriate language button
+    if (lang == 'fr') {
+        $('.btn_en').show();
+    } else {
+        $('.btn_fr').show();
+    }
     lang_toggle(lang);
 
     $('.btn_en').click(function () {
 //        $('#lang').val('en');
         $.cookie('lang', 'en');
         lang_toggle('en');
-        $('.btn_en').addClass('btn-success');
-        $('.btn_fr').removeClass('btn-success');
+        $('.btn_en').hide();
+        $('.btn_fr').show();
     });
     $('.btn_fr').click(function () {
 //        $('#lang').val('fr');
         $.cookie('lang', 'fr');
         lang_toggle('fr');
-        $('.btn_fr').addClass('btn-success');
-        $('.btn_en').removeClass('btn-success');
+        $('.btn_fr').hide();
+        $('.btn_en').show();
     });
 
 //    inAppBrowserToggles
@@ -89,9 +97,48 @@ function init_glendon_app() {
         }
 
     });
-    
+
+    $('#futurestudents').click(function () {
+        var lang = $.cookie('lang');
+        if (lang == 'fr') {
+            var ref = window.open('http://www.glendon.yorku.ca/futurestudents/fr/', '_blank', 'location=yes');
+        } else {
+            var ref = window.open('http://www.glendon.yorku.ca/futurestudents/', '_blank', 'location=yes');
+        }
+
+    });
+
+    $('#currentstudents').click(function () {
+        var lang = $.cookie('lang');
+        if (lang == 'fr') {
+            var ref = window.open('http://www.glendon.yorku.ca/current-students/fr/', '_blank', 'location=yes');
+        } else {
+            var ref = window.open('http://www.glendon.yorku.ca/current-students/', '_blank', 'location=yes');
+        }
+
+    });
+
+    $('#alumnivisitors').click(function () {
+        var lang = $.cookie('lang');
+        if (lang == 'fr') {
+            var ref = window.open('http://www.glendon.yorku.ca/alumni/fr/', '_blank', 'location=yes');
+        } else {
+            var ref = window.open('http://www.glendon.yorku.ca/alumni/', '_blank', 'location=yes');
+        }
+
+    });
+    $('#transit').click(function () {
+        var lang = $.cookie('lang');
+        if (lang == 'fr') {
+            var ref = window.open('https://mobile.ttc.ca/', '_blank', 'location=yes');
+        } else {
+            var ref = window.open('https://mobile.ttc.ca/', '_blank', 'location=yes');
+        }
+
+    });
+
 //    Taken from Glendon WP theme
-$('#btn_quicklinks').click(function (e) {
+    $('#btn_quicklinks').click(function (e) {
 
         if ($('#quicklinks').is(":visible")) {
             $('#quicklinks').hide('puff');
@@ -124,27 +171,11 @@ $('#btn_quicklinks').click(function (e) {
 
 }
 
-function init_events() {
-    init_glendon_app();
-
-    $.ajax({
-        url: "http://www.glendon.yorku.ca/alumni/events/",
-        type: "POST",
-        crossDomain: true,
-        data: '',
-        dataType: "html",
-        success: function (response) {
-
-            response.replace(/http:\/\/www.glendon.yorku.ca\/alumni\/wp-content\/themes\/glendon-bootstrap\/css\/bootstrap.css/g, '#');
-            response.replace('http://www.glendon.yorku.ca/alumni/wp-content/themes/glendon-bootstrap/style.css', '#');
-            alert(response);
-
-            $('#events').html(response);
-        }
-    });
-
-}
-
+/**
+ * Toogle between languages
+ * @param string language
+ * @returns {undefined}
+ */
 function lang_toggle(language) {
     $.ajax({
         url: 'lang/translations.xml',

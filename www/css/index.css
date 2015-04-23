@@ -185,10 +185,7 @@ a {
     background-color: #004890;
 }
 
-.container-body{
-    position: relative;
-    top: 200px;
-}
+
 
 .row-top {
     margin-top: 30px;
@@ -346,4 +343,21 @@ fieldset[disabled] .btn-glendon-blue.active {
 
 .btn, .navbar, .dropdown-menu {
     border-radius: 0;
+}
+
+#navbar-one, .navbar-one {
+    border-color: #0068A4;
+    background-color: #0068A4;
+}
+
+.navbar-toggle {
+    background-color: #EEE;
+}
+
+.nav > li > a {
+    color: #fff;
+}
+.nav > li > a:hover {
+    background-color: transparent;
+    color: #fff;
 }

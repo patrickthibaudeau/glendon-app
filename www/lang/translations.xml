@@ -68,4 +68,176 @@
         <en>Quick links</en>
         <fr>Liens rapide</fr>
     </translation>
+    <translation id="futurestudents">
+        <en>Future students</en>
+        <fr>Futur étudiants</fr>
+    </translation>
+    <translation id="currentstudents">
+        <en>Current students</en>
+        <fr>Étudiants</fr>
+    </translation>
+    <translation id="alumni">
+        <en>Alumni and visitors</en>
+        <fr>Diplômés et visiteurs</fr>
+    </translation>
+    <translation id="aboutus">
+        <en>About us</en>
+        <fr>À propos de Glendon</fr>
+    </translation>
+    <translation id="principalsmessage">
+        <en>Principal’s Message</en>
+        <fr>Message du principal</fr>
+    </translation>
+    <translation id="research">
+        <en>Research</en>
+        <fr>Recherche</fr>
+    </translation>
+    <translation id="ourprofessors">
+        <en>Our Professors</en>
+        <fr>Nos professeurs</fr>
+    </translation>
+    <translation id="centreexcellence">
+        <en>Centre of Excellence</en>
+        <fr>Centre d’excellence</fr>
+    </translation>
+    <translation id="careers">
+        <en>Careers</en>
+        <fr>Carrières</fr>
+    </translation>
+    <translation id="students">
+        <en>Students</en>
+        <fr>Étudiants</fr>
+    </translation>
+    <translation id="programsstudy">
+        <en>Programs of Study</en>
+        <fr>Programmes d’études</fr>
+    </translation>
+    <translation id="undergraduateadmission">
+        <en>Undergraduate Admissions</en>
+        <fr>Admission au premier cycle</fr>
+    </translation>
+    <translation id="graduatadmissions">
+        <en>Graduate Admissions</en>
+        <fr>Admission aux études supérieures</fr>
+    </translation>
+    <translation id="extendedlearning">
+        <en>Extended Learning</en>
+        <fr>Formation continue</fr>
+    </translation>
+    <translation id="visitus">
+        <en>Visit us</en>
+        <fr>Visites du campus</fr>
+    </translation>
+    <translation id="campuslife">
+        <en>Campus life</en>
+        <fr>Vie étudiante</fr>
+    </translation>
+    <translation id="facultystaff">
+        <en>Faculty and Staff</en>
+        <fr>Professeurs et personnel</fr>
+    </translation>
+    <translation id="yulink">
+        <en>YU Link</en>
+        <fr>YU Link</fr>
+    </translation>
+    <translation id="webmail">
+        <en>Webmail</en>
+        <fr>Courriel</fr>
+    </translation>
+    <translation id="visitors">
+        <en>Visitors</en>
+        <fr>Visiteurs</fr>
+    </translation>
+    <translation id="counsellorsteachers">
+        <en>Counsellors and Teachers</en>
+        <fr>Enseignants et orienteurs</fr>
+    </translation>
+    <translation id="media">
+        <en>Media</en>
+        <fr>Médias</fr>
+    </translation>
+    <translation id="givingglendon">
+        <en>Giving to Glendon</en>
+        <fr>Dons</fr>
+    </translation>
+    <translation id="accessibility">
+        <en>Accessibility</en>
+        <fr>Accessibilité</fr>
+    </translation>
+    <translation id="weatherstatus">
+        <en>Weather Status</en>
+        <fr>Conditions météo</fr>
+    </translation>
+    <translation id="parking">
+        <en>Parking and Transportation</en>
+        <fr>Stationnement et transport</fr>
+    </translation>
+    <translation id="facilitiesrentals">
+        <en>Facilities Rentals</en>
+        <fr>Location des installations</fr>
+    </translation>
+    <translation id="artgallery">
+        <en>Art Gallery</en>
+        <fr>Galerie Glendon</fr>
+    </translation>
+    <translation id="theatreglendon">
+        <en>Theatre Glendon</en>
+        <fr>Théâtre Glendon</fr>
+    </translation>
+    <translation id="transit">
+        <en>Transit</en>
+        <fr>Transport en commun</fr>
+    </translation>
+    <translation id="campusmaps">
+        <en>Campus map</en>
+        <fr>Map du campus</fr>
+    </translation>
+    <translation id="keelestreet">
+        <en>Keele Campus</en>
+        <fr>Campus Keele</fr>
+    </translation>
+    <translation id="glendoncampus">
+        <en>Glendon Campus</en>
+        <fr>Campus Glendon</fr>
+    </translation>
+    <translation id="emergency">
+        <en>Emergency</en>
+        <fr>Urgence</fr>
+    </translation>
+    <translation id="securitycontrolcentres">
+        <en>Security Control Centres</en>
+        <fr>Centres de contrôle de sécurité</fr>
+    </translation>
+    <translation id="generalphone">
+        <en>General phone</en>
+        <fr>Téléphone</fr>
+    </translation>
+    <translation id="urgentphone">
+        <en>Urgent phone</en>
+        <fr>Téléphone d'urgence</fr>
+    </translation>
+    <translation id="or">
+        <en>or</en>
+        <fr>ou</fr>
+    </translation>
+    <translation id="fax">
+        <en>Fax</en>
+        <fr>Fax</fr>
+    </translation>
+    <translation id="tty">
+        <en>TTY</en>
+        <fr>TTY</fr>
+    </translation>
+    <translation id="lawenforcement">
+        <en>Law Enforcement</en>
+        <fr>Police</fr>
+    </translation>
+    <translation id="localpolice">
+        <en>Local Police – 53 Division</en>
+        <fr>Police locale - Division 53</fr>
+    </translation>
+    <translation id="localpolicekeele">
+        <en>Local Police – 31 Division</en>
+        <fr>Police locale - Division 31</fr>
+    </translation>
 </translations>
